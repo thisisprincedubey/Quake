@@ -44,9 +44,6 @@ Quake is a browser-based disaster tracker that pulls live earthquake data and di
 ## Project Structure
 ```
 Quake/
-── index.html
-── style.css
-── script.js
 ── README.md
 ```
 
