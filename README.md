@@ -23,12 +23,12 @@ Quake is a browser-based disaster tracker that pulls live earthquake data and di
 ---
 
 ## Tech Stack
-| HTML -> Structure 
-| CSS -> Styling & Layout
-| JavaScript -> Logic, Fetch, Array HOFs
-| USGS Earthquake API -> Real-time earthquake data
-| Leaflet.js -> Interactive map rendering 
-| GitHub Pages -> Deployment 
+- HTML -> Structure 
+- CSS -> Styling & Layout
+- JavaScript -> Logic, Fetch, Array HOFs
+- USGS Earthquake API -> Real-time earthquake data
+- Leaflet.js -> Interactive map rendering 
+- GitHub Pages -> Deployment 
 
 ---
 
