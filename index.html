@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quake — Live Earthquake Tracker</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <header>
+    <div class="header-left">
+      <h1>🌍 Quake</h1>
+      <span class="subtitle">Live Earthquake Tracker</span>
+    </div>
+    <div class="stats-bar">
+      <div class="stat">
+        <span class="stat-label">Total</span>
+        <span class="stat-value" id="total-count">—</span>
+      </div>
+      <div class="stat">
+        <span class="stat-label">Strongest</span>
+        <span class="stat-value" id="strongest">—</span>
+      </div>
+      <div class="stat">
+        <span class="stat-label">Avg Magnitude</span>
+        <span class="stat-value" id="avg-mag">—</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="controls">
+    <input type="text" id="search" placeholder="🔎 Search by location..." />
+
+    <select id="filter-mag">
+      <option value="0">All Magnitudes</option>
+      <option value="2">2.0+</option>
+      <option value="4">4.0+</option>
+      <option value="5">5.0+</option>
+      <option value="6">6.0+</option>
+    </select>
+
+    <select id="sort-by">
+      <option value="time">Most Recent</option>
+      <option value="magnitude">Strongest First</option>
+      <option value="depth">Deepest First</option>
+    </select>
+
+    <select id="filter-time">
+      <option value="day">Past 24 Hours</option>
+      <option value="week">Past 7 Days</option>
+      <option value="month">Past 30 Days</option>
+    </select>
+  </div>
+
+  <div class="main-layout">
+    <div id="map"></div>
+    <div class="cards-section">
+      <div id="loading" class="loading">Fetching earthquake data...</div>
+      <div id="cards-container"></div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
